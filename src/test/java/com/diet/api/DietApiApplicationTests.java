@@ -1,4 +1,4 @@
-package com.diet.api.dietapi;
+package com.diet.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

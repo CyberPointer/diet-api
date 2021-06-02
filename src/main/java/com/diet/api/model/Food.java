@@ -2,11 +2,8 @@ package com.diet.api.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "food")
@@ -14,11 +11,12 @@ import javax.persistence.Table;
 @Setter
 public class Food {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     @Column(name = "food_name")
-    String food_name;
+    String foodName;
     @Column(name = "food_type")
-    String food_type;
+    String foodType;
     @Column(name = "kcal")
     Integer kcal;
     @Column(name = "whey")

@@ -1,4 +1,4 @@
-package com.diet.api.dietapi;
+package com.diet.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
